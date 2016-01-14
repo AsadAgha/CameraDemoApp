@@ -13,7 +13,7 @@
         document.addEventListener('resume', onResume.bind(this), false);
 
         document.getElementById('btnTakePhoto').onclick = function () {
-            camera.getPicture(function (imageUri) {
+            navigator.camera.getPicture(function (imageUri) {
                 var lastPhotoContainer = document.getElementById("lastphoto");
                 alert('Looking good ;-)');
 
