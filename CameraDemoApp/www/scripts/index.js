@@ -13,7 +13,14 @@
         document.addEventListener('resume', onResume.bind(this), false);
 
         document.getElementById('btnTakePhoto').onclick = function () {
-            alert('Hi there :-)');
+            camera.getPicture(function (imageUri) {
+                var lastPhotoContainer = document.getElementById("lastphoto");
+                alert('Looking good ;-)');
+
+                lastPhotoContainer.innerHTML = "<img src='" + imageUri + "' style='width= 75%;' />"
+            }
+            , null, null);
+          
         };
         
         // TODO: Cordova has been loaded. Perform any initialization that requires Cordova here.
