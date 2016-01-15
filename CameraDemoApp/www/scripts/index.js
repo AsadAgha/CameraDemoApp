@@ -15,7 +15,7 @@
         document.getElementById('btnTakePhoto').onclick = function () {
             //navigator.camera.getPicture(function (imageUri) {
              //   var lastPhotoContainer = document.getElementById("lastphoto");
-                alert("Looking good ;-)");
+                alert("Looking good Asad;-)");
 
                // lastPhotoContainer.innerHTML = "<img src='" + imageUri + "' style='width= 75%;' />";
           //  }
