@@ -13,13 +13,13 @@
         document.addEventListener('resume', onResume.bind(this), false);
 
         document.getElementById('btnTakePhoto').onclick = function () {
-            //navigator.camera.getPicture(function (imageUri) {
-             //   var lastPhotoContainer = document.getElementById("lastphoto");
-                alert("Looking good Asad;-)");
+            navigator.camera.getPicture(function (imageUri) {
+                var lastPhotoContainer = document.getElementById("lastphoto");
+                alert("Looking good ;-)");
 
-               // lastPhotoContainer.innerHTML = "<img src='" + imageUri + "' style='width= 75%;' />";
-          //  }
-         //   , null, null);
+                lastPhotoContainer.innerHTML = "<img src='" + imageUri + "' style='width= 75%;' />";
+            }
+            , null, null);
           
         };
         
